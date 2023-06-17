@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Contact : MonoBehaviour
 {
-
+    /*
+    When a collision occurs, the method checks if the current game object has the "Bullet" tag. 
+    If it does, the game object is destroyed, effectively removing it from the scene. 
+    */
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (this.gameObject.tag != "Bullet")
