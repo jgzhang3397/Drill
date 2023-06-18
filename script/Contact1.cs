@@ -20,9 +20,10 @@ public class Contact1 : MonoBehaviour
         animator.SetBool("conllision", flag);
         Invoke("delayOpen", 5);
         
-        // Das dritte Hindernis (welches der Bohrer berührt) beendet das Spiel.
+        // 5. Das dritte Hindernis (welches der Bohrer berührt) beendet das Spiel.
         if (counter>=3)
-            {
+        {
+            // 7. Bei Spielende gelangen Spieler:innen zurück ins Menü.
             SceneManager.LoadScene("menu");
         }
     }
