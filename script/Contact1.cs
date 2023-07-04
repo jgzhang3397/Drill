@@ -77,6 +77,7 @@ public class Contact1 : MonoBehaviour
         flag = true;
         counter += 1;
         DoRotate();
+        // trigger, reduce a heart
         Heart.HealthBar();
        
         
@@ -87,6 +88,7 @@ public class Contact1 : MonoBehaviour
         flag = true;
         counter += 1;
         DoRotate();
+        // trigger, reduce a heart
         Heart.HealthBar();
         
 
