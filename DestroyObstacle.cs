@@ -8,7 +8,7 @@ public class DestroyObstacle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObjectFoundBySearch = GameObject.FindGameObjectWithTag("Cam");
+        gameObjectFoundBySearch = GameObject.FindGameObjectWithTag("Cam"); //access and track the position of the camera object
         
     }
 
@@ -17,7 +17,8 @@ public class DestroyObstacle : MonoBehaviour
     {
         
         
-        
+        // compare the difference between the y-axis position of the obstacle and the y-axis of the camera 
+        // if the difference exceeds 15 units, the obstacle should be destroyed 
         if(transform.position.y - gameObjectFoundBySearch.transform.position.y > 15 ) {
             
             Destroy(this.gameObject);
